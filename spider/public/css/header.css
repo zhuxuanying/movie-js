@@ -1,0 +1,106 @@
+body{
+    margin:0px;
+}
+header{
+    width:100%;
+    padding:0px;
+    margin:0px;
+    margin:0 auto;
+    padding:0px;
+}
+/*----------------------------------------111111 header-top*/
+.bg-gray{
+    width:100%;
+    background:#ddd/*#F5F5F5*/;
+}
+#header-top{
+    width:1200px;
+    margin:0 auto;
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+}
+#header-top>ul{
+    display:flex;
+    justify-content: space-between;
+}
+#header-top>ul a{
+    font-size: 0.75rem;
+}
+#header-top a:hover{
+    color:#f75e4e;
+}
+#header-top>ul img {
+    vertical-align:bottom !important;
+    width: 15px;
+}
+#header-top ul:nth-child(1){
+    width: 25%;
+}
+#header-top ul:nth-child(2){
+    width:45%;
+
+}
+/*shou-cang图片大小*/
+.img-size{
+   width:20px !important;
+}
+/*-------------------------------222222 header center*/
+.bg-white{
+    width:100%;
+    background:#fff;
+}
+#header-center{
+    width:1200px;
+    margin:0 auto;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.shuru{
+    display: flex;
+}
+.shuru input:nth-child(1){
+    width:300px;
+    height:30px;
+    border:3px solid #FB1B1B;
+    padding-left:10px;
+    outline:none;
+
+}
+.shuru input:nth-child(2){
+    width:78px;
+    height:30px;
+    background: #FB1B1B;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size:0.8rem;
+    text-align: center;
+}
+/*------------------------------------- 333  nav*/
+#nav{
+    background:#FB1B1B;
+    height:40px;
+    line-height: 40px;
+    border-radius: 2px;
+}
+#nav ul{
+    width:1200px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+#nav a{
+    font-size:1rem;
+    color:#fff;
+}
+#nav ul li{
+    width:100%;
+    text-align: center;
+}
+#nav ul li:hover{
+    height: 40px;
+   background: #E71204;
+}

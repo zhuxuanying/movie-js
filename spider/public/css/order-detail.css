@@ -1,0 +1,332 @@
+/*----------------------------------section------------------------- */
+.hidden{
+    display: none !important;
+}
+section{
+    width:1200px;
+    margin:0 auto;
+    padding:0.5rem;
+    background: #fff;
+}
+/*----------------------------------section top ----------------------*/
+#s-top{
+
+     font-size:0.8rem;
+     font-weight: bold;
+     margin-top: 0.5rem;
+ }
+#s-top ul{
+    display: flex;
+    justify-content: space-between;
+}
+#s-top ul li{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 5px;
+    align-items: center;
+}
+#s-top ul span{
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+}
+#s-top ul li span:nth-child(1){
+    width:36px;
+    height:36px;
+    background: #0DA2B9;
+    color:#fff;
+}
+#s-top ul li span:nth-child(2){
+    width:136px;
+    height:36px;
+    background: #00AFC7;
+    color:#fff;
+}
+#s-top ul li span:nth-child(3){
+    width:0;
+    height:0;
+    color:#fff;
+    border-width:18px 0 18px 18px;
+    border-style:solid;
+    border-color:transparent transparent transparent #00AFC7;/*透明 透明 透明 */
+}
+#s-top ul li span:nth-child(4){
+    width:225px;
+    color:#fff;
+    border:1px solid #eee;
+}
+/*原来样式*/
+#s-top ul li.origin span:nth-child(1){
+    width:36px;
+    height:36px;
+    background: #D8D8D8;
+    color:#999999;
+}
+#s-top ul li.origin span:nth-child(2){
+    width:136px;
+    height:36px;
+    color:#999999;
+    background: #EEEEEE;
+}
+#s-top ul li.origin span:nth-child(3){
+    width:0;
+    height:0;
+    border-width:18px 0 18px 18px;
+    border-style:solid;
+    border-color:transparent transparent transparent #EEEEEE;/*透明 透明 透明 */
+}
+#s-top ul li.origin span:nth-child(4){
+    max-width: 100%;
+    border:1px solid #eee;
+}
+/*------------------------------  section bottom ---------------------*/
+/*section bottom left*/
+/*-----------------row1 ------------*/
+#s-bottom{
+    margin:2rem 0px 2rem 0px;
+}
+#s-bottom #choose {
+    width: 76%;
+    border: 1px solid #C9CDE0;
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+}
+#s-bottom #choose .row1{
+    font-size:0.7rem;
+    display: flex;
+    margin-bottom: 2rem;
+}
+#s-bottom .row1 ul{
+    width:870px;
+    height:100px;
+    padding:0.5rem;
+    background: #FFEFEF;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all linear 2s;
+}
+#s-bottom .row1 ul li{
+    width:33.3333%;
+    text-align: left;
+}
+#s-bottom .row1 ul li:nth-child(3){
+   padding-left: 2.5rem;
+}
+#s-bottom .row1 img{
+    max-width: 100%;
+    width:20%;
+    height:75px;
+    margin-right: 0.5rem;
+}
+#s-bottom .row1 .yy{
+    color:#000;
+    margin-bottom:0.4rem;
+
+}
+#s-bottom .row1 .time{
+    display: flex;
+    align-items: center;
+
+}
+#s-bottom .row1 .cc{
+    color:#FC5242;
+    margin-bottom:0.4rem;
+}
+#s-bottom .row1 .tip{
+    font-size:0.6rem;
+    color:#707070;
+}
+#s-bottom .row1 .sanc{
+    color:#FF4747;
+    margin-right: 0.3rem;
+}
+#s-bottom .row1 div.change{
+    width:35%;
+    background:#00AFC7;
+    padding:0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2px;
+
+}
+#s-bottom .row1 div.change a{
+    color:#fff;
+    font-size:0.6rem;
+
+}
+#s-bottom .row1 div.change a.wai{
+    display: block;
+    background: #fff;
+    width:16px;
+    height:16px;
+    line-height: 16px;
+    text-align: center;
+}
+#s-bottom .row1 div.change a.wai img{
+    width:14px;
+    height: 14px;
+}
+#s-bottom .row1 .control{
+    width:3%;
+    background: #FFD0D0;
+}
+#s-bottom .row1 .control a{
+    color:#FF4747;
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0.5rem 0px 0.5rem 0px;
+}
+#s-bottom .row1 .control a span{
+    padding-bottom: 0.5rem;
+}
+/*----------------row2 ---------------*/
+#s-bottom .row2{
+
+    display: flex;
+
+}
+.seat-RN ul li{
+    color:#000;
+    font-size: 0.8rem;
+    background: #EBF1FF;
+    padding:0.2rem;
+    margin:0.1rem;
+    text-align: center;
+}
+#seatArea{
+    margin-left: 1rem;
+}
+#seatArea img{
+    cursor: pointer;
+}
+#choose{
+    float: left;
+}
+#s-bottom:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+/* --------------------row3--------------------*/
+#s-bottom .row3 ul{
+    margin-top:2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/*section bottom right*/
+#result{
+    width:24%;
+    float: right;
+   padding-left:35px;
+   background: #EBF1FF;
+}
+#result>div{
+    padding:10px 0px 0px 0px;
+    padding-bottom:20px;
+    border-bottom:2px dashed #eee;
+}
+#result>.seat>ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-size:0.6rem;
+    color:#000;
+}
+#result>.seat>ul+p{
+    font-size:0.6rem;
+    margin-top:5px;
+}
+#result>.seat>ul>li{
+    display: flex;
+    margin:10px 10px 5px 0px;
+}
+#result .origin-seat>p{
+    border:1px solid #FF4747;
+    width:80px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    font-size:0.7rem;
+    color:#FF4747;
+    margin-top:10px;
+}
+#result>.seat>ul>li>p{
+    border:1px solid #FF4747;
+    width:80px;
+    height:20px;
+    text-align: center;
+    line-height: 20px;
+    font-size:0.6rem;
+    color:#FF4747;
+    
+    
+}
+#result>.seat>ul>li>a{
+    color:#fff;
+    height:20px;
+    width:20px;
+    text-align: center;
+    line-height: 20px;
+    background: #FF4747;
+}
+#result>.seat>p>span{
+    font-size:12px;
+    color:#FF4747;
+    margin:0px 2px 0px 2px;
+}
+#result>.phone>h4{
+    margin-bottom:5px;
+}
+#result>.price{
+    font-size:0.7rem;
+    color:#000;
+}
+#result>.price>p{
+   margin:5px 0px 5px 0px;
+}
+#result>.price>p>span{
+    color:#FF4747;
+    
+    font-size:1.3rem;
+    font-weight: bold;
+}
+#result a.tijiao{
+    display: block;
+    margin:0 auto;
+    width:200px;
+    height:40px;
+    background: #FF4747;
+    color:#fff;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 3px;
+}
+#result a.xuanze {
+    display: block;
+    margin:0 auto;
+    width:200px;
+    height:40px;
+    background: #e3e3e3;
+    color:#7c7c7c;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 3px;
+}
+
+#result>.phone>div>p{
+    margin-top:5px;
+    font-size:0.8rem;
+    color:#FF4747
+}
+#result>.phone>div>p{
+    display: flex;
+    align-items: center
+}
+#result>.phone>div>p>img{
+    margin-right:5px;
+}

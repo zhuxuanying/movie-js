@@ -1,0 +1,41 @@
+#pay{
+    display: flex;
+    background-color:#fff3f3;
+    width:100%;
+    padding:20px;
+    margin:20px 0px 0px 0px;
+    height:500px;
+}
+#pay p{
+    font-size:1rem;
+    margin-bottom:10px;
+}
+#pay>div.time p:last-child{
+    color: #f56c6c;
+}
+#pay p>b{
+    font-size:25px;
+    color: #FF4747;
+}
+img{
+    width:60px;
+    height:60px;
+    margin-right:20px;
+}
+#s-top ul li:nth-child(2) span:nth-child(2) {
+   
+    background: #00AFC7;
+    color: #fff;
+}
+#s-top ul li:nth-child(2) span:nth-child(1) {
+   
+    background: #0DA2B9;
+    color: #fff;
+}
+#s-top ul li:nth-child(2) span:nth-child(3) {
+    
+    color: #fff;
+    border-width: 18px 0 18px 18px;
+    border-style: solid;
+    border-color: transparent transparent transparent #00AFC7;
+}

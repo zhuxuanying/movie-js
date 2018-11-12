@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/movie-detail.css"/>
+  <link rel="stylesheet" href="my-boots/my-boot.css">
+  <title>movie-detail</title>
+</head>
+<body>
+<header>
+ 
+</header>
+<section>
+  <!--top-->
+  <div id="s-top">  
+    <div class="s-top-left">
+     <!-- <div class="tu">
+        <img src="img/movie-detail/1.jpg" alt=""/>
+        <p>评分<span><span class="font-big">7</span>.0</span> </p>
+      </div>
+      <div class="detail">
+        <h1>一出好戏</h1>
+        <p>The island</p>
+        <hr/>
+        <p>众人深处于荒岛</p>
+        <p class="b-1"><span>上映日期:</span>2018-08-08</p>
+        <p class="b-1"><span>片长/语言:</span>134分钟/国语</p>
+        <p class="b-1"><span>导演/演员:</span>黄渤/黄渤 / 舒淇 / 王宝强 / 张艺兴 / 于和伟 / 王迅 / 李勤勤 / 李又麟</p>
+        <p class="b-1"><span>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型:</span><a href="#">喜剧</a></p>
+      </div>-->
+    </div>
+    <div class="s-top-right">  
+      <ul class="tabs">
+        <li><a href="#juzhao" data-target="#juzhao" data-toggle="tab" class="base active">剧照/预告片</a></li>
+        <li><a href="#tusi" data-target="#tusi"  class="base " data-toggle="tab" >吐丝</a></li>
+        <li><a href="#yueying" data-target="#yueying" data-toggle="tab" class="base">约影</a></li>
+      </ul>
+      <div class="container">
+        <div id="juzhao">
+              <img src="img/movie-detail/yueying-1.png"/>
+              <img src="img/movie-detail/yueying-2.png" />
+              <img src="img/movie-detail/yueying-3.png"/>
+              <img src="img/movie-detail/yueying-4.png" />
+              <a href="#">更多》</a>
+            </div>
+        <div id="tusi" class="hidden">
+          <p>这是吐丝</p>
+        </div>      
+       
+        <div id="yueying" class="hidden">
+            <p>这是约影</p>  
+        </div>
+      </div>
+    </div>  
+  </div>
+  <!--tbottom-->
+  <div id="s-bottom">
+  <!--top button-->
+    <div>
+      <ul class="tabs">
+        <li>
+          <a href="#goupiao" data-target="#goupiao" class="base active" data-toggle="tab">
+            排片购票
+          </a>
+        </li>
+        <li>
+          <a href="#juzhao1" data-target="#juzhao1" class="base "  data-toggle="tab">
+            剧照/预告片
+          </a>
+        </li>
+        <li>
+          <a href="#yingping" data-target="#yingping" class="base" data-toggle="tab">
+            剧情影评
+          </a>
+        </li>
+        
+        
+      </ul>
+      <div class="border-blue">&nbsp;</div>
+      <h3 class="position">同类热映</h3>
+    </div>
+    <!--bottom-left-->
+    <div class="s-b-left">
+      <div class="content">  
+        <div id="goupiao" >   
+            <div class="date">    
+                <ul class="second-ul">
+                  <!--
+                    <li data-toggle="date">
+                      <a href="#" class="hover">
+                        <div class="fl">今天</div>
+                        <div class="fr data">
+                          <p>09月</p>
+                          <p>01日</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li data-toggle="date">
+                        <a href="#">
+                          <div class="fl">今天</div>
+                          <div class="fr data">
+                            <p>09月</p>
+                            <p>01日</p>
+                          </div>
+                        </a>
+                    </li>
+                    <li data-toggle="date">
+                          <a href="#">
+                            <div class="fl">今天</div>
+                            <div class="fr data">
+                              <p>09月</p>
+                              <p>01日</p>
+                            </div>
+                          </a>
+                    </li>
+                    <li data-toggle="date">
+                      <a href="#">
+                        <div class="fl">今天</div>
+                        <div class="fr data">
+                          <p>09月</p>
+                          <p>01日</p>
+                          </div>
+                      </a>
+                    </li>-->
+                </ul>
+            </div>
+            <div class="movie">   
+                <h4>请选择影院</h4>  
+                  <div class="yingyuan">  
+                    <p>影院：</p>
+                    <div class="bottom" >
+                      <a href="#" class=" hover" data-mtid="1" data-toggle="mtid">左岸国际电影城(松江沃尔玛店)</a>  
+                    </div>
+                    <div class="bottom">
+                        <a href="#" data-mtid="2" data-toggle="mtid">青春光线电影院</a>   
+                    </div>
+                  </div>
+            </div>
+            <!--请求结果-->
+            <div id="res">
+                <!--影院详情-->
+                <div id="yy-detail">
+                  <!--
+                   <img src="img/order/movie-theater.jpg" />
+                    <div class="d-wenzi">
+                      <a href="#">
+                        <h2>左岸国际电影城(松江沃尔玛店)</h2>
+                      </a>
+                      <div>
+                        <span class="blue">0</span>
+                        0元购
+                        <span class="three-D">3D</span>
+                      </div>
+                      <div>
+                        <a href="#" class="blue">+</a>
+                        <a href="#">设为常去影院</a>
+                      </div>
+                      <p class="font-3">
+                        地址：【淮海中路99号大上海时代广场6楼（柳林路口）】淮海中路99号大上海时代广场6楼（柳林路口）
+                      </p>
+                    </div>-->
+                </div>
+                <!--选座购票-->
+                <div id="x-zuo">
+                    <!--  top  nav  -->
+                    <div class="bg-gray">
+                      <ul>
+                        <li>时间</li>
+                        <li>语言/特效</li>
+                        <li>放映厅</li>
+                        <li>优惠/标识</li>
+                        <li>蜘蛛价/影院价</li>
+                        <li>选座/预览</li>
+                      </ul>
+                    </div>
+                    <!-- bottom  xijie -->
+                    <div class=xijie> 
+                      <!--
+                      <ul>
+                        <li>
+                            <span>16:00</span> <br/>
+                            <p  class="font-small"><span>18:30</span>离场</p>
+                        </li>
+                        <li>
+                          <span>原版</span> <br/>
+                          <a href="#" class="three">3D</a>
+                        </li>
+                        <li>
+                          三号厅
+                        </li>
+                        <li>
+                          <a href="#" class="dui">兑</a>
+                          <a href="#" class="dui">抵</a>
+                          <a href="#" class="di">低至19元</a>
+                        </li>
+                        <li class="money">
+                          44.00元
+                        </li>
+                        <li>
+                          <span><a href="order-detail.html"  class="select">选座购票</a></span>
+                          <a href="order-detail.html">
+                            <img src="img/order/xuanzuo.png"/>
+                          </a>
+                        </li>
+                      </ul>
+                      -->
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <div id="juzhao1" class="hidden">
+          <!--left-->
+          <div class="left">
+           <img src="img/movie-detail/phone.png" > 
+          </div>
+          <!--right-->
+          <div class=right>  
+            <div>
+              <!--
+               <img src="img/product/md/yi-1-1.png">   -->         
+            </div>
+            <div class="small-img" >
+              <div id="prev" class="disable">
+                <img src="img/movie-detail/prev.png" >
+              </div>
+              <div id="small-img">
+                <ul>
+                  <!--
+                  <li>
+                    <a href="#">
+                      <img src="img/product/sm/yi-1-2.jpg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/product/sm/yi-1-3.jpg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/product/sm/yi-1-4.jpg" alt="">
+                    </a>
+                  </li>                
+                  <li>
+                    <a href="#">
+                      <img src="img/product/sm/yi-1-6.jpg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/product/sm/yi-1-7.jpg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/product/sm/yi-1-8.jpg" alt="">
+                      </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/product/sm/yi-1-6.jpg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/product/sm/yi-1-7.jpg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/product/sm/yi-1-8.jpg" alt="">
+                      </a>
+                  </li>
+                -->
+                </ul> 
+              </div>
+              <div id="next">
+                <img src="img/movie-detail/next.png" alt="">
+              </div> 
+            </div>        
+        </div>
+        </div>
+        <div id="yingping" class="hidden" name="yingping" >
+          <!--
+          <div>
+            <h4>剧情简介</h4>
+            <p>马进欠下债务，与远房表弟小兴在底层社会摸爬滚打，习惯性的买彩票，企图一夜爆富，并迎娶自己的同事姗姗。一日，公司全体员工出海团建，途中，马进收到了彩票中头奖的信息，六千万！就在马进狂喜自己翻身的日子终于到来之际，一场突如其来的滔天巨浪打破了一切。苏醒过来的众人发现身处荒岛，丧失了一切与外界的联系……
+            </p>
+          </div>
+          <div>
+            <h4>影片点评</h4>
+            <div class="user-argu">
+              <div>
+                <img src="img/movie-detail/user_aver.jpg" />
+                <p class="font-3">45555</p>
+              </div>
+              <div>
+                <p class="font-1">不错的</p>
+                <p class="font-3">来自谁的什么时间的评论</p>
+              </div>
+            </div>
+          </div>-->
+        </div>
+       
+       
+      </div>
+      <div class="s-b-right">
+        <div class="flag">
+         
+          <div class="flag-top">
+            <ul>  <!--
+              <li>
+                <p>喜剧</p>
+              </li>-->
+              
+            </ul>
+          </div>
+          <div class="flag-bottom"> 
+              <ul>
+                  <!--NO1
+                  <li  data-toggle="flag">
+                    <div class="res1-watch hidden">
+                      <h4>01</h4>
+                      <p>
+                        <a href="#">
+                              大轰炸
+                        </a>
+                        <a href="#">
+                            [10月28日上映]
+                        </a>
+                      </p>
+                      <a href="#">
+                        <span>5</span> 人加入了观影清单
+                      </a>
+                    </div>
+                    <div class="hover1-watch" >
+                        <h4>01</h4>
+                        <img src="img/index/hot-4.jpg" alt="">
+                        <p>
+                          <a href="#">
+                            大轰炸
+                          </a>
+                          <a href="#">
+                              [10月28日上映]
+                          </a>
+                          <a href="#">
+                              <span>5</span> 人加入了观影清单
+                          </a>
+                          <a href="#">加入观影清单</a>  
+                        </p>
+                         
+                    </div>
+                  </li>
+                  <li  data-toggle="flag">
+                      <div class="res1-watch">
+                        <h4>02</h4>
+                        <p>
+                          <a href="#">
+                                大轰炸
+                          </a>
+                          <a href="#">
+                              [10月28日上映]
+                          </a>
+                        </p>
+                        <a href="#">
+                          <span>5</span> 人加入了观影清单
+                        </a>
+                      </div>
+                      <div class="hover1-watch  hidden" >
+                          <h4>02</h4>
+                          <img src="img/index/hot-4.jpg" alt="">
+                          <p>
+                            <a href="#">
+                              大轰炸
+                            </a>
+                            <a href="#">
+                                [10月28日上映]
+                            </a>
+                            <a href="#">
+                                <span>5</span> 人加入了观影清单
+                            </a>
+                            <a href="#">加入观影清单</a>  
+                          </p>
+                           
+                      </div>
+                  </li>
+                  <li  data-toggle="flag">
+                      <div class="res1-watch">
+                        <h4>03</h4>
+                        <p>
+                          <a href="#">
+                                大轰炸
+                          </a>
+                          <a href="#">
+                              [10月28日上映]
+                          </a>
+                        </p>
+                        <a href="#">
+                          <span>5</span> 人加入了观影清单
+                        </a>
+                      </div>
+                      <div class="hover1-watch  hidden" >
+                          <h4>03</h4>
+                          <img src="img/index/hot-4.jpg" alt="">
+                          <p>
+                            <a href="#">
+                              大轰炸
+                            </a>
+                            <a href="#">
+                                [10月28日上映]
+                            </a>
+                            <a href="#">
+                                <span>5</span> 人加入了观影清单
+                            </a>
+                            <a href="#">加入观影清单</a>  
+                          </p>
+                           
+                      </div>
+                  </li>
+                  <li  data-toggle="flag">
+                      <div class="res1-watch">
+                        <h4>04</h4>
+                        <p>
+                          <a href="#">
+                                大轰炸
+                          </a>
+                          <a href="#">
+                              [10月28日上映]
+                          </a>
+                        </p>
+                        <a href="#">
+                          <span>5</span> 人加入了观影清单
+                        </a>
+                      </div>
+                      <div class="hover1-watch  hidden" >
+                          <h4>04</h4>
+                          <img src="img/index/hot-4.jpg" alt="">
+                          <p>
+                            <a href="#">
+                              大轰炸
+                            </a>
+                            <a href="#">
+                                [10月28日上映]
+                            </a>
+                            <a href="#">
+                                <span>5</span> 人加入了观影清单
+                            </a>
+                            <a href="#">加入观影清单</a>  
+                          </p>
+                           
+                      </div>
+                  </li>-->
+              </ul>
+           
+    
+          </div>
+        </div>
+  
+          
+         
+      </div>
+    </div>
+     
+  </div>
+
+ 
+
+  
+</section>
+<footer>
+ 
+</footer>
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/movie-detail.js"></script>
+<script src="my-boots/my-boot.js"></script>
+<script src="js/event.js"></script>
+</body>
+</html>

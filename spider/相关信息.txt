@@ -1,0 +1,7 @@
+要两个影院——spider_movie_theater
+每个影院 两个放映厅——spider_hall座位信息
+每天  每个电影 每个电影院的每个厅都有
+mid  mtid
+select * from pianchang  where movie_id=1 and movie_id=10 
+select *form hall where hid=2;(select hall_id from pianchang where)
+子查询

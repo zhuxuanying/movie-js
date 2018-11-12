@@ -1,0 +1,217 @@
+.bg-lighblue{
+    background:#FFEFEF;
+    
+}
+.bg-blue {
+    background: #FF4747;
+}
+section{
+    padding:1rem;
+}
+header{
+    width:100%;
+}
+footer{
+    width:100%;
+}
+/*----------------- order  section ------------------*/
+section{
+    width:1200px;
+    margin:0 auto;
+    background: #fff;
+}
+/*----------------- 1111 select movie ------------------*/
+#s-movie ul{
+    display:flex;
+
+}
+section h4{
+  padding-bottom:0.8rem;
+}
+#s-movie ul:nth-child(2){
+    overflow: hidden;
+}
+#s-movie ul:nth-child(2) li{
+    width:20%;
+    padding:1rem;
+}
+.second-ul{
+    margin-top:2rem;
+}
+.second-ul a{
+    background:#fff;
+    width: 109px;
+    height: 58px;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    color:#030303;
+    border:1px solid #00AFC7;
+    padding:0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-ul a:hover{
+    background: #00AFC7;
+    border:1px solid #00AFC7;
+    color:#fff;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:0.5rem;
+    padding-left:0.5rem;
+}
+/*-----------------2222 select movie theater ------------------*/
+#s-theater{
+    padding:1rem 0px 1rem 0px !important;
+}
+#s-theater ul:after{
+    content:"";
+    display: block;
+    clear:both;
+}
+#s-theater ul a{
+    display: block;
+    width: 80px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    color:#030303;
+    font-size:0.75rem;
+    float:left;
+}
+#s-theater a:hover{
+    display: block;
+    border-radius: 3px;
+    background: #EA4B4B;
+    color:#fff;
+   
+}
+#s-theater .input-align{
+    display: flex;
+}
+#s-theater .input-1{
+    width:128px;
+    height:30px;
+    border:1px solid #EA4B4B;
+    outline:none;
+    margin-left:2rem;
+    margin-top:5px;
+    padding-left:0.4rem;
+}
+#s-theater .input-2{
+    width:30px;
+    height:30px;
+    border:none;
+    outline:none;
+    margin-top:5px;
+}
+#s-theater .yingyuan{
+    display: flex;
+    margin-left:1rem;
+    align-items: center;
+    margin-top:1rem;
+    padding:0.5rem;
+    background:#FFEFEF;
+}
+#s-theater .bottom{
+    padding:0.3rem;
+    border:1px solid #EA4B4B;
+}
+#s-theater .bottom a{
+    display: block;
+    padding:0.2rem 0.5rem 0.2rem 0.5rem;
+}
+/*----------------- 3333 detail movie theater ------------------*/
+#yy-detail{
+    display: flex;
+}
+#yy-detail img{
+    width:15% ;
+}
+#yy-detail .d-wenzi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1rem;
+
+}
+#yy-detail .d-wenzi{
+    font-size:0.7rem;
+    color:#707070;
+}
+#yy-detail h2{
+    color:#000;
+}
+
+#yy-detail .blue{
+    padding:0.2rem;
+    background:#FF4747 ;
+    color:#fff;
+}
+#yy-detail .three-D{
+    padding:0.1rem 0.2rem 0.1rem 0.2rem;
+    border:2px solid #8ce868;
+}
+/*----------------- 4444  xuan zuo ------------------*/
+#x-zuo ul{
+    display: flex;
+    justify-content: space-around;
+    padding:0.5rem;
+    font-size:0.7rem;
+    align-items: center;
+    border-bottom:1px solid #f5f5f5;
+}
+#x-zuo ul li{
+    width:16.6666666%;
+    text-align: center;
+}
+#x-zuo .font-small{
+    font-size:0.5rem;
+    color:#707070;
+}
+#x-zuo .three{
+    background: #40B0FF;
+    color:#fff;
+    padding:0px 0.2rem 0px 0.2rem;
+}
+.dui{
+    background: #FFE8C0;
+    color:#FC5242;
+    padding:0.15rem 0.3rem 0.15rem 0.3rem;
+    border:1px dotted #f2f2f2;
+    border-radius: 2px;
+}
+.di{
+    background: #FED6CC;
+    color:#FC5242;
+    padding:0.15rem 0.5rem 0.15rem 0.5rem;
+    border:1px dotted #f2f2f2;
+    border-radius: 2px;
+}
+.money{
+    color:#FF4747;
+    font-size:0.9rem;
+    font-weight: bold;
+}
+.select{
+    display: inline-block;
+    width:90px;
+    height:35px;
+    border-radius: 2px;
+    line-height: 35px;
+    text-align: center;
+    background: #FF4747;
+    color:#fff;
+    font-size:0.9rem;
+    border-radius: 2px;
+}
+#x-zuo img{
+    width:12%;
+    vertical-align: bottom;
+    margin-left: 0.8rem;
+}
+
+

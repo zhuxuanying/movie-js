@@ -1,0 +1,150 @@
+
+/*-------------------全局基本配置---------------------*/
+*{
+    box-sizing:border-box;
+}
+p,ul,pre,h1,h2,h3,h4,h5,h6{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color:#7c7c7c;
+}
+body{
+    margin:0px;
+    background:#f2f2f2;
+    font:16px arial, Tahoma, Helvetica, simsun, "microsoft Yahei", sans-serif;
+}
+/*--------------------设置浮动类-----------------*/
+.fl{
+    float:left !important;
+}
+.fr{
+    float:right !important;
+}
+/*--------------------------iframe header footer ------------------*/
+
+.myfooter{
+    width:100%;
+    height:40rem;
+    display: flex;
+}
+
+/*-----------------------------img--------------------------*/
+.img{
+    max-width: 100% !important;
+}
+/*-----------------------------width---------------*/
+.w-75{
+    width:75%
+}
+.w-53{
+    width:53% !important;
+}
+.w-15{
+    width:15% !important;
+}
+.w-25{
+    width:28% !important;
+}
+.w-100{
+    width:100% !important;
+}
+.p-3{
+   padding:0.3rem !important;
+}
+/*----------------------文字---------------------*/
+.font-1{
+    color:#030303 !important;
+}
+.font-2{
+    font-size:0.8rem !important;
+    color:#707070 !important;
+}
+.font-3{
+    font-size:0.7rem !important;
+    color:#707070 !important;
+}
+
+/*---------------------------背景-----------------*/
+.bg-gray {
+    background: #f2f2f2 !important;
+}
+.bg-red{
+    background: #FF4747 !important;
+}
+.bg-light-blue{
+    background:#ECF1FF !important;
+}
+/*---------------------------------------浮动-------------*/
+.flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex-column{
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+.justify-between{
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+/*display*/
+.d-hidden{
+    display:none !important;
+}
+/*index movie-detail #hot-movie  right flag*/
+/*
+.flag {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border-top: 4px solid #eeeeee;
+    padding:0.3rem 0.2rem 0.3rem 0.8rem;
+}
+flag-top
+ .flag-top{
+    width:100%;
+}
+.flag-top ul{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}*/
+/*flag-bottom*/
+/*
+ .flag-bottom ul{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #eeeeee;
+    align-items: center;
+}
+.flag-bottom ul li{
+  height:60px;
+
+}
+.flag-bottom ul>li img{
+  height:60px;
+}
+ .flag-bottom h4{
+    display: inline-block;
+}
+.flag-bottom li:nth-child(1) a{
+    font-size:0.6rem;
+    color:#000;
+}
+.flag-bottom li:nth-child(2)>a{
+    font:italic bold 1rem "microsoft Yahei", sans-serif;
+    color:#FC5242;
+}
+.flag-bottom li:nth-child(3) a{
+    color:#000;
+}
+*/

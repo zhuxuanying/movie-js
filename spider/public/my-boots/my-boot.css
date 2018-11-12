@@ -1,0 +1,286 @@
+/*==========================my-tab===========================*/
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tabs>li{
+    width:33.333%;
+    border:1px solid #E4E4E4;
+}
+.tabs>li>a.base{
+    display:block;
+    background:#fff;
+    color:#000;
+    font-size:0.8rem;
+    text-align: center;
+    padding:0.8rem 0.5rem 0.8rem 0.5rem;
+}
+
+.tabs>li>a.active{  
+    background:#0AAAC1 !important;
+    color:#fff !important;
+}
+.tabs+.container>#juzhao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.tabs+.container>#juzhao>img{
+    width:50%;
+    padding:0.8rem;
+}
+.tabs+.container>#juzhao>a{
+    position:absolute;
+    right:0.5rem;
+    bottom:-2rem;
+}
+/*=============movie-list==========================================*/
+.movie-list{
+    padding:1.5rem 1rem 1.5rem 0.6rem;
+    color: #7c7c7c;
+    font-size:0.6rem;
+    display: flex;
+    flex-direction: column;
+}
+.movie-list>div{
+    display: flex;
+    padding-bottom: 1.5rem;
+    padding-top:1.5rem;
+    border-bottom: 2px solid #E7E7E7;
+    justify-content: flex-start;
+}
+.movie-list>div img{
+    width:115px;
+}
+.movie-list div.left{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+ }
+
+ .movie-list div.left a.a-btn{
+    width:80%;
+    display: block;
+    font-size: 0.8rem;
+    color:#fff;
+    text-align: center;
+    padding:0.3rem 0.5rem 0.3rem 0.5rem;
+    border-radius: 3px;
+    background: #00AFC7;
+    margin-top:0.3rem;
+}
+.movie-list div.left a.a-btn:hover{
+    color:#fff;
+}
+.movie-list div.right{
+      padding-left:1rem;
+}
+.movie-list div.right>ul>li{
+   display: flex;
+    align-items: center;
+    padding:0.2rem 0px 0.2rem 0px;
+}
+.movie-list div.right>ul>li h2{
+    color:#000;
+    margin-right:0.8rem;
+}
+.movie-list div.right>ul>li:nth-child(1)>p{
+    margin-left: 0.8rem;
+}
+.movie-list div.right>ul>li:nth-child(1)>p>span {
+    color:#FC5242;
+    font-size:1rem;
+}
+.movie-list div.right>ul>li:nth-child(3)>a{
+    display: block;
+    color:#fff;
+    background: #00AFC7;
+    padding:0.2rem;
+}
+.movie-list div.right>ul>li:nth-child(3)>button{
+    outline:none;
+    background: #fff;
+    width:100px;
+    border:1px solid #BCBCBC;
+}
+.movie-list div.right>ul>li:nth-child(3)>button>a{
+     color:#000;
+     font-size:0.6rem;
+ }
+ .movie-list div.right>ul>li:nth-child(7) span{
+    font-size:1rem;
+    color:#FC5242;
+}
+/*=============================flag========================================*/
+.flag {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+   
+    border-top: 4px solid #FF6262;
+    
+    padding:0.3rem 0.2rem 0.3rem 0.8rem;
+}
+/*flag-top*/
+ .flag-top{
+    width:100%;
+    padding:0.4rem 0rem 0.4rem 0rem;
+}
+.flag>.flag-bottom p{
+    display: flex;
+    flex-direction: column
+}
+.flag-top ul{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.flag-top ul>li:nth-child(2)>a{
+    color:#424965;
+    font-size:0.7rem;
+}
+.flag-top ul>li:nth-child(3)>a{
+    color:#7c7c7c;
+    font-size:0.6rem;
+}
+/*flag-bottom*/
+.flag>.flag-bottom ul{
+    margin-top:0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.flag>.flag-bottom ul>li{
+    border-bottom: 1px dashed #dbdbdb;
+    width:100%;
+}
+
+.flag>.flag-bottom h4{
+    display: inline-block;
+}
+.flag>.flag-bottom li>div.res-watch,.flag-bottom li>div.res1-watch{
+    padding:0.7rem 0px 0.7rem 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.flag>.flag-bottom li>div.res-watch a:nth-child(2){
+    font-size:0.6rem;
+    color:#000;
+    margin-left:-49px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+     white-space: nowrap;
+     width:58px;
+   
+}
+.flag>.flag-bottom li>div.res-watch a:nth-child(3){
+    font:italic bold 0.7rem "microsoft Yahei", sans-serif;
+    color:#FC5242;
+}
+.flag>.flag-bottom li>div.res-watch span{
+    font:italic bold 1rem "microsoft Yahei", sans-serif;
+}
+.flag>.flag-bottom li>div.res-watch a:last-child,.flag-bottom li>div.hover-watch>a:last-child {
+    color:#000;
+}
+.flag>.flag-bottom li>div.hover-watch,.flag>.flag-bottom li>div.hover1-watch{
+    display: flex;
+    padding:0.6rem 0px 0rem 0px;
+    justify-content: space-between;
+}
+.flag>.flag-bottom li>div.hover-watch>p{
+   justify-content: flex-end;
+   margin-left:-36px;
+}
+.flag>.flag-bottom li>div.hover-watch>p>a:first-child{
+    font-size:0.6rem;
+    color:#000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+     white-space: nowrap;
+     width:58px;
+}
+.flag>.flag-bottom li>div.hover-watch>p>a:last-child{
+    font:italic bold 0.7rem "microsoft Yahei", sans-serif;
+    color:#FC5242;
+}
+.flag>.flag-bottom li>div.hover-watch>p>a:last-child>span{
+    font-size: 1rem ;
+}
+.flag>.flag-bottom ul>li img{
+    height:58px;
+  }
+.flag>.flag-bottom li>div.hover-watch>a:last-child{
+   margin-top:20px;
+}   
+/*res1-watch*/
+.flag>.flag-bottom li>div.res1-watch>p{
+    margin-left:-25px;
+}
+.flag>.flag-bottom li>div.res1-watch>p>a:first-child{
+    margin-bottom:0.2rem;
+    font-size:0.7rem;
+    color:#262323;
+}
+.flag>.flag-bottom li>div.res1-watch>p>a:last-child{
+    font-size:0.6rem;
+    color:#939393;
+}
+.flag>.flag-bottom li>div.res1-watch>a:last-child>span{
+    color:#FC5242;  
+    font-size:0.8rem; 
+    font-weight: bold;
+}
+.flag>.flag-bottom li>div.res1-watch>a:last-child{
+    font-size:0.6rem;
+    color:#262323;
+}
+.flag>.flag-bottom li>div.hover1-watch>img{
+    margin-right: 10px;
+}
+.flag>.flag-bottom li>div.hover1-watch>p{
+   margin-right: 42px;
+}
+.flag>.flag-bottom li>div.hover1-watch>p>a{
+    margin-bottom:0.2rem;
+}
+.flag>.flag-bottom li>div.hover1-watch>p>a:first-child{
+    font-size:0.7rem;
+    color:#262323;
+}  
+.flag>.flag-bottom li>div.hover1-watch>p>a:nth-child(2){
+    font-size:0.6rem;
+    color:#939393;
+}
+.flag>.flag-bottom li>div.hover1-watch>p>a:nth-child(3){
+    font-size:0.7rem;
+    color:#262323;
+}
+.flag>.flag-bottom li>div.hover1-watch>p>a:nth-child(3)>span{
+    color:#FC5242;  
+    font-size:0.8rem; 
+    font-weight: bold;
+}
+.flag>.flag-bottom li>div.hover1-watch>p>a:nth-child(4){
+    display: block;
+    color:#fff;
+    text-align: center;
+    width:85px;
+    border-radius: 3px;
+    padding:0.2rem 0rem 0.2rem 0rem;
+    font-size:0.6rem;
+    background: #FC5242;
+}
+.flag>.flag-bottom li>div.hover1-watch>img{
+    height:85px;
+    width:60px;
+   
+    
+}

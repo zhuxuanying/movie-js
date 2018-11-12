@@ -1,0 +1,76 @@
+
+/*----------------------------------  111  footer  top*/
+#f-top{
+    background: #e4e4e4;
+    padding:1.5rem 0px 1.5rem 0px;
+}
+#f-top ul{
+    width:820px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+#f-top ul h4{
+    margin-bottom:0.5rem;
+    margin-top:0.5rem;
+}
+#f-top .first-ul{
+    margin-bottom:1.8rem;
+}
+#f-top  .sec-ul li{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+}
+#f-top  .sec-ul li a{
+   font-size:0.75px;
+    color:#707070;
+    margin-top:0.3rem;
+}
+/*----------------------------------  222  footer  center*/
+#f-center{
+    width:820px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding:1.5rem 0px 1.5rem 0px;
+}
+#f-center>div{
+    width:33%;
+}
+#f-center p a{
+    background: #a1a1a1;
+    color:#fff;
+    font-size:0.7rem;
+    padding:0.1rem;
+    margin-right:0.5rem;
+}
+#f-center .fr{
+    padding:0.3rem 0px 0.3rem 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#f-center .fr p{
+    margin-top:0.2rem;
+
+}
+/*----------------------------------- 333  footer  bottom*/
+#f-bottom{
+    background:#e4e4e4;
+    text-align: center;
+    padding:1.5rem;
+}
+#f-bottom ul{
+    display: flex;
+    margin-bottom: 0.8rem;
+    justify-content: center;
+}
+#f-bottom p{
+    margin-bottom: 0.8rem;
+}
+.foot-img img {
+    margin-right:0.2rem;
+}

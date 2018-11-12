@@ -1,0 +1,61 @@
+/*section*/
+section{
+    width:1200px;
+    margin:0 auto;
+   background: #fff;
+    padding:0.8rem;
+}
+/*s-left*/
+#s-left{
+    width:70%;
+
+}
+#s-left .dianying>div{
+    display: flex;
+    align-items: center;
+    margin:1rem 0px 1rem 0px;
+    font-size: 0.7rem;
+
+
+}
+#s-left .dianying>div span{
+    color:#999999;
+}
+#s-left .dianying>div a{
+    display: block;
+    font-size: 0.7rem;
+    color:#000;
+    padding:0.5rem;
+}
+
+#s-left .dianying>div a:hover{
+    background: #00AFC7;
+    color:#fff;
+}
+#s-left .dianying>div>ul>li{
+    float: left;
+    margin-left: 0.5rem;
+}
+/*tip*/
+#tip{
+    background:#F4F4F4;
+    padding:0.3rem;
+    display: flex;
+    justify-content: space-between;
+    font-size:0.6rem;
+
+}
+#tip ul>li{
+    float: left;
+    margin-left: 0.5rem;
+}
+#tip ul>li>a:hover{
+    color:#FC5242;
+}
+/*res*/
+
+
+/*s-right*/
+#s-right{
+    width:30%;
+}

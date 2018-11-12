@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/order-detail.css"/>
+  
+  <title>order-detail</title>
+</head>
+<body>
+<!--header-->
+<header>
+  
+</header>
+<!--section-->
+<section>
+  <!-- section top -->
+  <div id="s-top">
+    <ul>
+      <li >
+        <span>1.</span>
+        <span>选择场次和座位</span>
+        <span></span>
+        <span></span>
+      </li>
+      <li class="origin">
+        <span>1.</span>
+        <span>确认订单并支付</span>
+        <span></span>
+        <span></span>
+      </li>
+      <li class="origin">
+        <span>1.</span>
+        <span>接受短信,购票成功</span>
+        <span></span>
+        <span></span>
+      </li>
+    </ul>
+  </div>
+  <!-- section bottom -->
+  <div id="s-bottom">
+    <!--choose  left-->
+    <div id="choose">
+      <div class="row1">  
+        <ul><!--
+          <li class="flex">
+            <img src="img/order-details/1.jpg" alt=""/>
+            <h4>碟中谍6,全面瓦解</h4>
+          </li>
+          <li>
+            <p class="yy">万裕国际影城(淮海店)</p>
+            <p class="cc">场次：2018-09-02 星期日
+              20:40
+
+              二号厅</p>
+           
+          </li>
+          <li>
+            <p class="yy">语言/版本：原版 3D </p>
+            <div class="time">
+              <p class="sanc">预计23:08散场</p>
+              
+            </div>
+          </li>-->
+        </ul>
+        <div class="control">    
+          <a href="#">
+            <span>&lt;</span>
+            <span>收</span>
+            <span>起</span>
+          </a>
+        </div>
+
+      </div>
+      <div class="row2">
+        <div class="seat-RN">
+          <ul>
+            <!-- #choose>.row2>.seat-Rw>ul
+              <li>1</li>
+            -->
+          </ul>
+        </div>
+        <div id="seatArea"> <!--
+          <div class="seat-row"> #seatArea
+            <span>
+                <img name="weixuan" data-color="yellow" flag="1" src="img/order-details/yellow.png" data-red="img/order-details/red.png" data-pink="img/order-details/pink.png" data-green="img/order-details/green.png"  title="1排1座"  data-yellow="img/order-details/yellow.png" data-num="1排1座" data-toggle="seat" >
+            </span>
+            <span>
+                <img name="weixuan" data-color="yellow" flag="1" src="img/order-details/yellow.png" data-red="img/order-details/red.png" data-pink="img/order-details/pink.png" data-green="img/order-details/green.png"  title="1排2座"  data-yellow="img/order-details/yellow.png" data-num="1排2座" data-toggle="seat" >
+            </span>
+            <span>
+                <img name="weixuan" data-color="yellow" flag="1" src="img/order-details/yellow.png" data-red="img/order-details/red.png" data-pink="img/order-details/pink.png" data-green="img/order-details/green.png"  title="1排3座"  data-yellow="img/order-details/yellow.png" data-num="1排3座" data-toggle="seat" >
+            </span>
+            <span>
+                <img name="weixuan" data-color="yellow" flag="1" src="img/order-details/yellow.png" data-red="img/order-details/red.png" data-pink="img/order-details/pink.png" data-green="img/order-details/green.png"  title="1排4座"  data-yellow="img/order-details/yellow.png" data-num="1排4座" data-toggle="seat" >
+            </span>
+            <span>
+                <img name="weixuan" data-color="yellow" flag="1" src="img/order-details/yellow.png"  data-red="img/order-details/red.png" data-pink="img/order-details/pink.png" data-green="img/order-details/green.png" data-yellow="img/order-details/yellow.png"  data-num="1排5座" title="1排5座" data-toggle="seat">
+            </span>
+          </div>-->
+          
+            
+          
+        </div>
+      </div>
+      <div class="row3">
+        <ul>
+         
+          <li>
+            <img src="img/order-details/yellow.png"/>
+            可选座位
+          </li>
+          <li>
+            <img src="img/order-details/red.png"/>
+            不可选座位
+          </li>
+          <li>
+            <img src="img/order-details/green.png"/>
+            已选座位
+          </li>
+          <li>
+            <img src="img/order-details/pink.png"/>
+            情侣座位
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--result right-->
+    
+    <div id="result">    
+        <div class="seat">
+          <h4>您选择的座位</h4>
+          <div class="origin-seat">  
+              <p>还未选座</p>
+          </div>
+          <ul class="hidden">     
+            <!--
+            <li class="has-seat">
+              <p>2排3座</p>
+              <a href="#" data-toggle="del">X</a>
+            </li>
+            <li class="has-seat">
+                <p>2排3座</p>
+                <a href="#" data-toggle="del">X</a>
+            </li>-->
+          </ul>
+          <p class="hidden">已经选择<span>1</span>个座位再次点击取消,最多选4个座位</p>
+        </div>
+        <div class="phone">
+            <h4>请输入取票的手机号</h4>
+            <div>
+              手机号：<input type="text">  
+              <p class="hidden" id="kong"><img src="img/pay/tishi.png" > 请输入手机号</p>
+              <p class="hidden" id="geshi"><img src="img/pay/tishi.png" >手机号格式不正确</p>
+            </div>
+        </div> 
+        <div class="price"> <!--
+          <p>票价：￥141(单价34)</p>  
+          <p>小计：<span>￥141</span> </p>  --> 
+        </div>
+        <div class="submit">  
+            <a href="#" class="tijiao hidden  ">提交订单</a>
+            <a href="#" class="xuanze">选择座位</a>
+        </div>
+    </div>
+  </div>
+  
+</section>
+<!--footer-->
+<footer>
+  
+</footer>
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/order-detail.js"></script>
+
+</html>

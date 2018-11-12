@@ -1,0 +1,199 @@
+SET NAMES UTF8;
+DROP DATABASE IF EXISTS spider;
+CREATE DATABASE spider CHARSET=UTF8;
+USE xz;
+-- ----------------------------
+-- Table structure for `splider_index_carousel`
+-- ----------------------------
+DROP TABLE IF EXISTS spider_index_carousel;
+CREATE TABLE spider_index_carousel (
+  cid int(11) NOT NULL auto_increment,
+   img varchar(128),
+  title varchar(64),
+  href varchar(128),
+  PRIMARY KEY  (cid)
+) ;
+-- ----------------------------
+-- Records of xz_index_carousel
+-- ----------------------------
+INSERT INTO spider_index_carousel VALUES (1, 'img/index/banner-1.jpg','轮播广告商品1', 'product_details.html?lid=28');
+INSERT INTO `spider_index_carousel` VALUES (2, 'img/index/banner2.png', '轮播广告商品2', 'product_details.htmllid=19');
+INSERT INTO `spider_index_carousel` VALUES (3, 'img/index/banner3.png', '轮播广告商品3', 'lookforward.html');
+INSERT INTO `spider_index_carousel` VALUES (4, 'img/index/banner4.png', '轮播广告商品4', 'lookforward.html');
+INSERT INTO `spider_index_carousel` VALUES (5, 'img/index/banner-right-1.jpg', '华夏银行', 'product_details.html?lid=28');
+INSERT INTO `spider_index_carousel` VALUES (6, 'img/index/banner-right-2.jpg', '互惠', 'product_details.html?lid=19');
+INSERT INTO `spider_index_carousel` VALUES (7, 'img/index/banner-right-3.jpg', '9元看电影', 'lookforward.html');
+INSERT INTO `spider_index_carousel` VALUES (8, 'img/index/banner-right-4.jpg', '大礼', 'lookforward.html');
+INSERT INTO `spider_index_carousel` VALUES (9, 'img/index/banner-right-5.jpg', '大礼', 'lookforward.html');
+
+-- ----------------------------
+-- Table structure for `spider_index_product`
+-- ----------------------------
+DROP TABLE IF EXISTS `spider_index_product`;
+CREATE TABLE `spider_index_product` (
+  `pid` int(11) NOT NULL auto_increment,
+  `pname` varchar(32) default NULL, 
+  `title` varchar(64) default NULL,  
+  `price` decimal(10,2) default NULL,
+  `score` int(32) default NULL,
+  `goodrate` int(32) default NULL,
+  `pic` varchar(128) default NULL,
+  `seq_recommended` tinyint(4) default NULL,
+  `seq_top_sale` tinyint(4) default NULL,  
+  PRIMARY KEY  (`pid`)
+); 
+
+-- ----------------------------
+-- Records of xz_index_product
+-- ----------------------------
+INSERT INTO `spider_index_product` VALUES ('1','一出好戏', '', '23', '7.0', '98%', 'img/index/hot-1-1.jpg', '23', '33');
+INSERT INTO `spider_index_product` VALUES (NULL,'快把我哥带走', '', '23', '7.0', '98%', 'img/index/hot-1.jpg', '23', '33');
+INSERT INTO `spider_index_product` VALUES (NULL, '大师兄', 'href', '23', '7.0', '98%', 'img/index/hot-2.jpg', '23', '33');
+INSERT INTO `spider_index_product` VALUES (NULL, '精灵旅社3：疯狂', 'href', '23', '7.0', '98%', 'img/index/hot-3.jpg', '23', '33');
+INSERT INTO `spider_index_product` VALUES (NULL, '蚁人2：黄蜂女现身', 'href', '23', '7.0', '98%', 'img/index/hot-4.jpg', '23', '33');
+INSERT INTO `spider_index_product` VALUES (NULL, '锯齿鳄', 'href', '23', '7.0', '98%', 'img/index/hot-5.jpg', '23', '33');
+INSERT INTO `spider_index_product` VALUES (NULL, '深海历险记', 'href', '23', '7.0', '98%', 'img/index/hot-6.jpg', '23', '33');
+INSERT INTO `spider_index_product` VALUES (NULL, '碟中谍全面瓦解', 'href', '23', '7.0', '98%', 'img/index/hot-changci1.jpg', '23', '33');
+INSERT INTO `spider_index_product` VALUES (NULL, '蚁人2：黄蜂女现身', 'href', '23', '7.0', '98%', 'img/index/hot-changci1.jpg', '23', '33');
+INSERT INTO `spider_index_product` VALUES (NULL, '西红柿首富', 'href', '23', '7.0', '98%', 'img/index/hot-changci2.jpg', '23', '33');
+INSERT INTO `spider_index_product` VALUES (NULL, '金蝉脱壳', 'href', '23', '7.0', '98%', 'img/index/hot-changci3.jpg', '23', '33');
+INSERT INTO `spider_index_product` VALUES (NULL, '一出好戏', 'href', '23', '7.0', '98%', 'null', '23', '33');
+
+-- ----------------------------
+-- Table structure for `spider_user`
+-- ----------------------------
+DROP TABLE IF EXISTS `spider_user`;
+CREATE TABLE `spider_user` (
+  `uid` int(11) NOT NULL auto_increment,
+  `uname` varchar(32) default NULL,
+  `upwd` varchar(32) default NULL,
+  `email` varchar(64) default NULL,
+  `phone` varchar(16) default NULL,
+  `avatar` varchar(128) default NULL,
+  `user_name` varchar(32) default NULL,
+  `gender` int(11) default NULL,
+  `jifen` int(11) default NULL,
+  `zhanghu`  int(11) default NULL,
+  `coupon` int(11) default NULL,
+  PRIMARY KEY  (`uid`)
+) ;
+-- ----------------------------
+-- Records of xz_user
+-- ----------------------------
+INSERT INTO `spider_user` VALUES ('1', 'dingding', '123456', 'ding@qq.com', '13511011000', 'img/avatar/default.png', '丁春秋', '0','11','2','0');
+INSERT INTO `spider_user` VALUES ('2', 'dangdang', '123456', 'dang@qq.com', '13501234568', 'img/avatar/default.png', '当当喵', '1','11','2','0');
+INSERT INTO `spider_user` VALUES ('3','doudou','123456','dou@qq.com', '13501234569','img/avatar/default.png', '窦志强', '1','44','45','9');
+INSERT INTO `spider_user` VALUES ('4', 'yaya', '123456', 'ya@qq.com', '13501234560', 'img/avatar/default.png', '秦小雅', '0','1','44','45''9');
+
+-- ----------------------------
+-- Table structure for `spider_user_comment`
+-- ----------------------------
+DROP TABLE IF EXISTS `spider_user`;
+CREATE TABLE `spider_user` (
+  `cid` int(11) NOT NULL auto_increment,
+  `user_name` varchar(32) default NULL,
+  `content` varchar(360) default NULL,
+  `movie` varchar(64) default NULL,
+  `time` varchar(16) default NULL,
+  PRIMARY KEY  (`cid`)
+); 
+INSERT INTO `spider_user` VALUES ('1', 'dingding', '这场“花钱也累”的自嗨白日梦，显然比当年的《夏洛特烦恼》更疯狂更荒诞，也更深入对人性的讨伐。沈腾的喜剧天赋真的无法复刻，无论为己谋利还是替人圆梦，每一个笑点都打磨得恰到好处', '西红柿首富', '2018-8-2');
+INSERT INTO `spider_user` VALUES ('2', 'dangdang', '不错不错', '大师兄','2018-7-31');
+INSERT INTO `spider_user` VALUES ('3', 'doudou', '有趣', '快把我哥带走','2018-8-31');
+INSERT INTO `spider_user` VALUES ('4', 'yaya', '有趣', '海底历险记','2018-9-9');
+
+-- ----------------------------
+-- Table structure for `spider_order`
+-- ----------------------------
+DROP TABLE IF EXISTS `spider_order`;
+CREATE TABLE `spider_order` (
+  `aid` int(11) NOT NULL auto_increment,
+  `user_id` int(11) default NULL,
+  `address_id` int(11) default NULL,
+  `status` int(11) default NULL,
+  `order_time` bigint(20) default NULL,
+  `pay_time` bigint(20) default NULL,
+  `deliver_time` bigint(20) default NULL,
+  `received_time` bigint(20) default NULL,
+  `count` int(11),
+  `amount` int(11),
+  PRIMARY KEY  (`aid`)
+);
+-- ----------------------------
+-- Records of spider_order
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `spider_order_detail`
+-- ----------------------------
+DROP TABLE IF EXISTS `spider_detail`;
+CREATE TABLE `spider_detail`(
+  `did` int(11) NOT NULL auto_increment,
+  `order_id` int(11) default NULL,
+  `order_amount` varchar(128) default NULL,
+  `order_count` int(11) default NULL,
+  `order_status` varChar(16) default NULL,
+  `user_phone` int(11) default NULL,
+  PRIMARY KEY  (`did`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+-- ----------------------------
+-- Records of xz_order_detail
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `spider_movie`
+-- ----------------------------
+DROP TABLE IF EXISTS `spider_movie`;
+CREATE TABLE `spider_movie` (
+  `mid` int(11) NOT NULL auto_increment,
+  `mname` varchar(32) default NULL,
+  `detail` varchar(32) default NULL,
+  `time` varchar(64) default NULL,
+  `area` varchar(64) default NULL,
+  `language` varchar(16) default NULL,
+  `length` int(8) default NULL,
+  `director` varchar(32) default NULL,
+  `staring` varchar(32) default NULL,
+  `type` varchar(16) default NULL,
+  `release_time`  int(128) default NULL,
+  `mtro` varchar(64) default NULL,
+  `pic` varchar(64) default NULL,
+  `keyword`  varchar(16) default NULL,
+  `keychar` varchar(16) default NULL,
+  PRIMARY KEY  (`mid`)
+) ;
+-- ----------------------------
+-- Records of spider_movie
+-- ----------------------------
+INSERT INTO `spider_movie` VALUES (NULL, '一出好戏', 'detail', '现代','大陆','国语','134','黄渤','黄渤/舒淇/王宝强/张艺兴/于和伟/','喜剧','2018-08-10','众人身处荒岛','pic','keyword','keychar');
+INSERT INTO `spider_movie` VALUES (NULL, '快把我哥带走', 'detail', '现代','大陆','国语','115','郑芬芬','张子枫/彭昱畅/赵今麦/孙泽源/方翔锐/刘冠毅','奇幻/喜剧','2018-08-17','快把我哥待会你家','pic','keyword','keychar');
+
+-- ----------------------------
+-- Table structure for `spider_movie_pic`
+-- ----------------------------
+DROP TABLE IF EXISTS `spider_movie_pic`;
+CREATE TABLE `spider_movie_pic` (
+  `m_pc_id` int(11) NOT NULL auto_increment,
+  `m_pc_sm` varchar(32) default NULL,
+  `m_pc_md` varchar(32) default NULL,
+  `m_pc_lg` varchar(32) default NULL,
+  PRIMARY KEY  (`m_pc_id`)
+); 
+-- ----------------------------
+-- Records of spider_movie_pic
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `spider_movie_theater`
+-- ----------------------------
+DROP TABLE IF EXISTS `spider_movie_theater`;
+CREATE TABLE `spider_movie_theater` (
+  `mtid` int(11) NOT NULL auto_increment,
+  `mtname` varchar(32) default NULL,
+  `mt_address` varchar(64) default NULL,
+  `mt_intr` varchar(64) default NULL,
+  PRIMARY KEY  (`mtid`)
+); 
+-- ----------------------------
+-- Records of spider_movie_theater
+-- ----------------------------
